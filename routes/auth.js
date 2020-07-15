@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require("bcrypt");
 const { User } = require("../db/models");
 const db = require("../db/config");
-var async = require('async');
+// var async = require('async');
 const cookieParser = require("cookie-parser");
 
 // we store the tokens in-memory for simplicity's sake
