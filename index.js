@@ -1,9 +1,7 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
 const cookieParser = require("cookie-parser");
-const session = require("express-session");
 const bodyParser = require("body-parser");
-const util = require("util");
 const mysql = require("mysql");
 // const dotenv = require("dotenv").config();
 
