@@ -1,0 +1,29 @@
+{
+  "name": "Project04TienTienYep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon .",
+    "dev": "nodemon "
+  },
+  "author": "Tien Tien Yep",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "asyncawait": "^3.0.0",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.3",
+    "express-jwt": "^5.3.3",
+    "express-session": "^1.17.1",
+    "express-unless": "^0.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
