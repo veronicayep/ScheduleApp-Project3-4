@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Schedule App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+        {{#if user}}
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+            <a class="navbar-brand" href="/home">🏠</a>
+            <div>
+                <a class="nav-item btn btn-info" href="/schedule">🔧 Manage</a>
+                <a class="nav-item btn btn-dark" href="/logout">Logout</a>
+            </div>
+        </nav>
+        {{else}}
+        <h1 class="mt-4 text-center">📅</h1>
+        {{/if}}
+
+        {{#if message}}
+        <div class="alert {{messageClass}} mt-4" role="alert">
+            {{message}}
+        </div>
+        {{/if}}
+
+        {{{body}}}
+
+    </div>
+</body>
+
+</html>
